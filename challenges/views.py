@@ -42,9 +42,6 @@ def monthly_challenge(request, month):
         return HttpResponseNotFound("<h1>Invalid month provided</h1>")
 
 def index(request):
-    response_data = ""
-    for month in _get_months():
-        redirect_url = reverse('month-challenge', args=[month])
-        response_data += f"<a href='{redirect_url}'>{month.capitalize()}</a></br></br>"
-
-    return HttpResponse(response_data)
+    return render(request, "challenges/index.html", {
+        "months": _get_months(),
+    })
