@@ -4,6 +4,9 @@ from django.shortcuts import render
 
 # Create your views here.
 
+def monthly_challenge_by_number(request, month):
+    return HttpResponse(month)
+
 def monthly_challenge(request, month):
     challenge_text = None
     if month == "january":
@@ -15,4 +18,4 @@ def monthly_challenge(request, month):
     else:
         return HttpResponseNotFound("Incorrect month provided")
 
-    return HttpResponse(f"Hello, world. {challenge_text}")
+    return HttpResponse("Hello, world. {challenge_text}")
