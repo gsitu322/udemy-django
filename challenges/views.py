@@ -3,18 +3,18 @@ from django.urls import reverse
 from django.shortcuts import render
 
 monthly_challenges = {
-    "january": "january",
-    "february": "february",
-    "march": "march",
-    "april": "april",
-    "may": "may",
-    "june": "june",
-    "july": "july",
-    "august": "august",
-    "september": "september",
-    "october": "october",
-    "november": "november",
-    "december": None,
+    "january": "Dry January – no alcohol for the month",
+    "february": "Daily journaling – write one page a day",
+    "march": "Steps challenge – walk 10,000 steps daily",
+    "april": "No social media after 8pm",
+    "may": "Try a new hobby or skill each week",
+    "june": "Read 20 minutes every day",
+    "july": "Hydration challenge – drink 8 glasses of water daily",
+    "august": "Declutter – remove 1 item from your home daily",
+    "september": "Learn or practice meditation (10 min/day)",
+    "october": "No added sugar month",
+    "november": "Gratitude challenge – write 3 things you’re thankful for daily",
+    "december": "Acts of kindness – do one small kind thing each day",
 }
 # Create your views here.
 
